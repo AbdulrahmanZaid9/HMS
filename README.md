@@ -52,57 +52,57 @@ A Visual Studio Installer project (Setup1_HMS) for packaging the application, al
 
 | Login | Dashboard |
 |---|---|
-| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) |
+| ![Login](https://github.com/user-attachments/assets/965d876c-0bf1-4c54-b0a5-5aa31ca29d86) | ![Dashboard](https://github.com/user-attachments/assets/c081f24e-03c2-458d-a44a-2d43d4f0eb00) |
 
 ### Users and Profile
 
 | Users Management | View Profile |
 |---|---|
-| ![Users Management](screenshots/users-management.png) | ![View Profile](screenshots/view-profile.png) |
+| ![Users Management](https://github.com/user-attachments/assets/d1bf56c9-4ae2-4b27-b38b-985d64dff62e) | ![View Profile](https://github.com/user-attachments/assets/c0c84145-bd63-4d47-b869-7fea77a03dfe) |
 
 ### Customer Management
 
 | Customer List | Customer Actions |
 |---|---|
-| ![Customer List](screenshots/customer-list.png) | ![Customer Actions](screenshots/customer-actions.png) |
+| ![Customer List](https://github.com/user-attachments/assets/a952047f-e7c9-4d5f-9770-de26d2d5d243) | ![Customer Actions](https://github.com/user-attachments/assets/1c12213b-2c2a-46dc-9939-773d8b86e0af) |
 
 | Add Customer | Reservation History |
 |---|---|
-| ![Add Customer](screenshots/add-customer.png) | ![Reservation History](screenshots/reservation-history.png) |
+| ![Add Customer](https://github.com/user-attachments/assets/6fe2f184-d600-4720-a88d-4cbbd835b614) | ![Reservation History](https://github.com/user-attachments/assets/bad1312a-d0c6-447f-ba7a-e8a5343a73f9) |
 
 ### Room Management
 
 | Room Details |  |
 |---|---|
-| ![Room Details](screenshots/room-details.png) |  |
+| ![Room Details](https://github.com/user-attachments/assets/c22d2946-9006-4435-b8fb-e99be89a8512) |  |
 
 ### Reservations
 
 | Reservations List and Actions | Current Reservation |
 |---|---|
-| ![Reservations List](screenshots/reservations-list.png) | ![Current Reservation](screenshots/current-reservation.png) |
+| ![Reservations List](https://github.com/user-attachments/assets/61674235-7d3b-4830-9e66-db4b49b87168) | ![Current Reservation](https://github.com/user-attachments/assets/1bfbd041-a2de-4f2c-8eff-4c7268e3340d) |
 
 ### Services
 
 | Services Management | Service Booking List |
 |---|---|
-| ![Services Management](screenshots/services-management.png) | ![Service Booking List](screenshots/service-booking-list.png) |
+| ![Services Management](https://github.com/user-attachments/assets/55cac7ce-7321-4595-94f8-477f1ff8963a) | ![Service Booking List](https://github.com/user-attachments/assets/02afee19-5949-4a21-92cf-2572f5b84e9e) |
 
 | Service Booking Actions | Add Services to Bill |
 |---|---|
-| ![Service Booking Actions](screenshots/service-booking-actions.png) | ![Add Services to Bill](screenshots/add-services-to-bill.png) |
+| ![Service Booking Actions](https://github.com/user-attachments/assets/5fbed618-be53-44e4-b69a-c88449f1fe78) | ![Add Services to Bill](https://github.com/user-attachments/assets/b5d4ecb5-5842-45d4-a900-dce7a3b30247) |
 
 ### Billing
 
 | Bill Summary |  |
 |---|---|
-| ![Bill Summary](screenshots/bill-summary.png) |  |
+| ![Bill Summary](https://github.com/user-attachments/assets/a7ed89ec-8e70-473b-a64d-dfc279e54a13) |  |
 
 ### Reports
 
 | Revenue Reports |  |
 |---|---|
-| ![Revenue Reports](screenshots/revenue-reports.png) |  |
+| ![Revenue Reports](https://github.com/user-attachments/assets/6695f061-39af-4995-a049-dd9e4d5da3b8) |  |
 
 ## Project Structure
 
@@ -203,4 +203,3 @@ This project does not currently include a license file. A license (for example, 
 ## Author
 
 Developed by [Abdulrahman Zaid](https://github.com/AbdulrahmanZaid9).
-<img width="824" height="580" alt="login" src="https://github.com/user-attachments/assets/3265716b-ca10-4f3f-9e14-c25192ee2d6d" />
