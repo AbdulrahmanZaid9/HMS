@@ -175,8 +175,6 @@ public static string connectionString = "Server=.;Database=HotelManagementDB;Use
 
 Update the `Server`, `User Id`, and `Password` values to match your local SQL Server setup before running the project.
 
-Note: This connection string currently contains hardcoded sample credentials for local development. For any production deployment, this should be moved to a secure configuration source, such as an encrypted configuration section, environment variables, or a secrets manager, rather than committed to source control.
-
 ### 4. Build and run
 
 1. Open `HMS/HMS.slnx` in Visual Studio.
@@ -188,17 +186,6 @@ Note: This connection string currently contains hardcoded sample credentials for
 ## Building the Installer
 
 The `Setup1_HMS` project can be built to produce a standalone Windows installer (.msi) for distributing the application to machines without Visual Studio installed.
-
-## Roadmap
-
-- Migrate connection string handling to a secure configuration approach
-- Add automated tests for the business logic layer
-- Add export of reports to PDF or Excel
-- Add role-based access control for different staff types
-
-## License
-
-This project does not currently include a license file. A license (for example, MIT) should be added if external use or contribution is intended.
 
 ## Author
 
