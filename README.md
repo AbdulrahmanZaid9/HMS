@@ -10,8 +10,6 @@ A desktop Hotel Management System built with C# and Windows Forms, following a 3
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Building the Installer](#building-the-installer)
-- [Roadmap](#roadmap)
-- [License](#license)
 - [Author](#author)
 
 ## Features
