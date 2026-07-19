@@ -1,0 +1,9 @@
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\bin\Release\HMS_DataAccess.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\bin\Release\HMS_DataAccess.pdb
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\bin\Release\Utilities.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\bin\Release\Utilities.pdb
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\obj\Release\HMS_DataAccess.csproj.AssemblyReference.cache
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\obj\Release\HMS_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\obj\Release\HMS_Data.39101AE0.Up2Date
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\obj\Release\HMS_DataAccess.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\obj\Release\HMS_DataAccess.pdb

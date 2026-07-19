@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7843B678-373B-4865-B6F7-41C05F91A912}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HMS</RootNamespace>
+    <AssemblyName>HMS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=4.2.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>packages\Serilog.4.2.0\lib\net471\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>packages\Serilog.Sinks.File.7.0.0\lib\net471\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Channels.8.0.0\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customers\FrmAddUpdateCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\FrmAddUpdateCustomers.Designer.cs">
+      <DependentUpon>FrmAddUpdateCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\Controls\CtrlViewCusomterProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers\Controls\CtrlViewCusomterProfile.Designer.cs">
+      <DependentUpon>CtrlViewCusomterProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\FrmCustomersMangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\FrmCustomersMangement.Designer.cs">
+      <DependentUpon>FrmCustomersMangement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\FrmViewCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\FrmViewCustomerInfo.Designer.cs">
+      <DependentUpon>FrmViewCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global Classes\clsLogger.cs" />
+    <Compile Include="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global Classes\ClsGlobal.cs" />
+    <Compile Include="Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\FrmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmReports.Designer.cs">
+      <DependentUpon>FrmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlAddServiceToBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlAddServiceToBill.Designer.cs">
+      <DependentUpon>CtrlAddServiceToBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlBillSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlBillSummary.Designer.cs">
+      <DependentUpon>CtrlBillSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlBillSummaryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlBillSummaryView.Designer.cs">
+      <DependentUpon>CtrlBillSummaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlCheckInConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlCheckInConfirm.Designer.cs">
+      <DependentUpon>CtrlCheckInConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlCheckInSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlCheckInSummary.Designer.cs">
+      <DependentUpon>CtrlCheckInSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlCurrentReservation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlCurrentReservation.Designer.cs">
+      <DependentUpon>CtrlCurrentReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlReservationOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlReservationOverview.Designer.cs">
+      <DependentUpon>CtrlReservationOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlSecurityDeposit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\CtrlSecurityDeposit.Designer.cs">
+      <DependentUpon>CtrlSecurityDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\Controls\UcReservationHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reservations\Controls\UcReservationHistory.Designer.cs">
+      <DependentUpon>UcReservationHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmAddServicetoBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmAddServicetoBill.Designer.cs">
+      <DependentUpon>FrmAddServicetoBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmAddUpdateReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmAddUpdateReservations.Designer.cs">
+      <DependentUpon>FrmAddUpdateReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmBillSummaryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmBillSummaryView.Designer.cs">
+      <DependentUpon>FrmBillSummaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmCheckIn.Designer.cs">
+      <DependentUpon>FrmCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmCheckOut.Designer.cs">
+      <DependentUpon>FrmCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmCurrentReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmCurrentReservation.Designer.cs">
+      <DependentUpon>FrmCurrentReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmReservationBillEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmReservationBillEntry.Designer.cs">
+      <DependentUpon>FrmReservationBillEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmReservationDetailsCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmReservationDetailsCheckIn.Designer.cs">
+      <DependentUpon>FrmReservationDetailsCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmReservationDetailsCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmReservationDetailsCheckOut.Designer.cs">
+      <DependentUpon>FrmReservationDetailsCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmReservationHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmReservationHistory.Designer.cs">
+      <DependentUpon>FrmReservationHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservations\FrmReservationsManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservations\FrmReservationsManagment.Designer.cs">
+      <DependentUpon>FrmReservationsManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\Controls\CtrlViewRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rooms\Controls\CtrlViewRoom.Designer.cs">
+      <DependentUpon>CtrlViewRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\FrmEditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\FrmEditRoom.Designer.cs">
+      <DependentUpon>FrmEditRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\FrmRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\FrmRoom.Designer.cs">
+      <DependentUpon>FrmRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\FrmViewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\FrmViewRoom.Designer.cs">
+      <DependentUpon>FrmViewRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesBooking\Controls\UcEditServiceBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServicesBooking\Controls\UcEditServiceBooking.Designer.cs">
+      <DependentUpon>UcEditServiceBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmEditServiceBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmEditServiceBooking.Designer.cs">
+      <DependentUpon>FrmEditServiceBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmServicesBookingManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmServicesBookingManagment.Designer.cs">
+      <DependentUpon>FrmServicesBookingManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmServicesManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmServicesManagment.Designer.cs">
+      <DependentUpon>FrmServicesManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmUpdatePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesBooking\FrmUpdatePrice.Designer.cs">
+      <DependentUpon>FrmUpdatePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Users\Controls\CtrlViewUserProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\CtrlViewUserProfile.Designer.cs">
+      <DependentUpon>CtrlViewUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmVerifyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmVerifyPassword.Designer.cs">
+      <DependentUpon>FrmVerifyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmAddUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmAddUpdateUser.Designer.cs">
+      <DependentUpon>FrmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmUsersManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmUsersManagment.Designer.cs">
+      <DependentUpon>FrmUsersManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmViewProfile.Designer.cs">
+      <DependentUpon>FrmViewProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Customers\FrmAddUpdateCustomers.resx">
+      <DependentUpon>FrmAddUpdateCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\Controls\CtrlViewCusomterProfile.resx">
+      <DependentUpon>CtrlViewCusomterProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\FrmCustomersMangement.resx">
+      <DependentUpon>FrmCustomersMangement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\FrmViewCustomerInfo.resx">
+      <DependentUpon>FrmViewCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\FrmReports.resx">
+      <DependentUpon>FrmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Controls\CtrlAddServiceToBill.resx">
+      <DependentUpon>CtrlAddServiceToBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Controls\CtrlBillSummary.resx">
+      <DependentUpon>CtrlBillSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Controls\CtrlCheckInConfirm.resx">
+      <DependentUpon>CtrlCheckInConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Controls\CtrlCurrentReservation.resx">
+      <DependentUpon>CtrlCurrentReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Controls\CtrlReservationOverview.resx">
+      <DependentUpon>CtrlReservationOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Controls\CtrlSecurityDeposit.resx">
+      <DependentUpon>CtrlSecurityDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\Controls\UcReservationHistory.resx">
+      <DependentUpon>UcReservationHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmAddServicetoBill.resx">
+      <DependentUpon>FrmAddServicetoBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmAddUpdateReservations.resx">
+      <DependentUpon>FrmAddUpdateReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmBillSummaryView.resx">
+      <DependentUpon>FrmBillSummaryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmCheckIn.resx">
+      <DependentUpon>FrmCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmCheckOut.resx">
+      <DependentUpon>FrmCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmCurrentReservation.resx">
+      <DependentUpon>FrmCurrentReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmReservationBillEntry.resx">
+      <DependentUpon>FrmReservationBillEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmReservationDetailsCheckIn.resx">
+      <DependentUpon>FrmReservationDetailsCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmReservationDetailsCheckOut.resx">
+      <DependentUpon>FrmReservationDetailsCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmReservationHistory.resx">
+      <DependentUpon>FrmReservationHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservations\FrmReservationsManagment.resx">
+      <DependentUpon>FrmReservationsManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\Controls\CtrlViewRoom.resx">
+      <DependentUpon>CtrlViewRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\FrmEditRoom.resx">
+      <DependentUpon>FrmEditRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\FrmRoom.resx">
+      <DependentUpon>FrmRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\FrmViewRoom.resx">
+      <DependentUpon>FrmViewRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesBooking\FrmEditServiceBooking.resx">
+      <DependentUpon>FrmEditServiceBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesBooking\FrmServicesBookingManagment.resx">
+      <DependentUpon>FrmServicesBookingManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesBooking\FrmServicesManagment.resx">
+      <DependentUpon>FrmServicesManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesBooking\FrmUpdatePrice.resx">
+      <DependentUpon>FrmUpdatePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Controls\CtrlViewUserProfile.resx">
+      <DependentUpon>CtrlViewUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmAddUpdateUser.resx">
+      <DependentUpon>FrmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmUsersManagment.resx">
+      <DependentUpon>FrmUsersManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmVerifyPassword.resx">
+      <DependentUpon>FrmVerifyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmViewProfile.resx">
+      <DependentUpon>FrmViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HMS_Buisness\HMS_Buisness.csproj">
+      <Project>{657bd6a6-5916-476d-a063-089c79c1b0c9}</Project>
+      <Name>HMS_Buisness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{b4a5e079-ae6a-41f7-bd06-8063aa9b83d9}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Not found.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-history-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-house-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-in-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-out-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-status-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-food-service-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-active-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-active-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-50 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-price-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

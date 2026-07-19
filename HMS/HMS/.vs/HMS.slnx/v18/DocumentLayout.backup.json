@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Zaid\\Downloads\\Projects\\MyProjects\\MyCV\\Projects_Course_5\\Projects_C_5\\HMS\\HMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7843B678-373B-4865-B6F7-41C05F91A912}|HMS.csproj|c:\\users\\zaid\\downloads\\projects\\myprojects\\mycv\\projects_course_5\\projects_c_5\\hms\\hms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7843B678-373B-4865-B6F7-41C05F91A912}|HMS.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7843B678-373B-4865-B6F7-41C05F91A912}|HMS.csproj|c:\\users\\zaid\\downloads\\projects\\myprojects\\mycv\\projects_course_5\\projects_c_5\\hms\\hms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7843B678-373B-4865-B6F7-41C05F91A912}|HMS.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25BB7320-5759-4976-9E97-3482DDA15567}|..\\HMS_DataAccess\\HMS_DataAccess.csproj|c:\\users\\zaid\\downloads\\projects\\myprojects\\mycv\\projects_course_5\\projects_c_5\\hms\\hms_dataaccess\\clsdataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mainform.cs",
+              "DocumentMoniker": "C:\\Users\\Zaid\\Downloads\\Projects\\MyProjects\\MyCV\\Projects_Course_5\\Projects_C_5\\HMS\\HMS\\Mainform.cs",
+              "RelativeDocumentMoniker": "Mainform.cs",
+              "ToolTip": "C:\\Users\\Zaid\\Downloads\\Projects\\MyProjects\\MyCV\\Projects_Course_5\\Projects_C_5\\HMS\\HMS\\Mainform.cs",
+              "RelativeToolTip": "Mainform.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAASwB8AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T16:12:47.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mainform.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zaid\\Downloads\\Projects\\MyProjects\\MyCV\\Projects_Course_5\\Projects_C_5\\HMS\\HMS\\Mainform.cs",
+              "RelativeDocumentMoniker": "Mainform.cs",
+              "ToolTip": "C:\\Users\\Zaid\\Downloads\\Projects\\MyProjects\\MyCV\\Projects_Course_5\\Projects_C_5\\HMS\\HMS\\Mainform.cs [Design]",
+              "RelativeToolTip": "Mainform.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T16:12:44.031Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsDataAccessSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Zaid\\Downloads\\Projects\\MyProjects\\MyCV\\Projects_Course_5\\Projects_C_5\\HMS\\HMS_DataAccess\\clsDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\HMS_DataAccess\\clsDataAccessSettings.cs",
+              "ToolTip": "C:\\Users\\Zaid\\Downloads\\Projects\\MyProjects\\MyCV\\Projects_Course_5\\Projects_C_5\\HMS\\HMS_DataAccess\\clsDataAccessSettings.cs",
+              "RelativeToolTip": "..\\HMS_DataAccess\\clsDataAccessSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T13:04:34.666Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

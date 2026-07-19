@@ -1,0 +1,260 @@
+2026-07-18 00:38:26.673 +08:00 [ERR] Error while loading reservation details. Reservation ID: 11
+System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at HMS_DataAccess.ClsServiceBookingsData.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 139
+   at HMS_Buisness.ClsServiceBookings.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 87
+   at HMS.reservations.Controls.CtrlReservationOverview._LoadResversationDetails() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 100
+   at HMS.reservations.Controls.CtrlReservationOverview.LoadReservationDetails(Int32 reservationId, EnReservationStatus status) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 158
+2026-07-18 00:40:08.980 +08:00 [ERR] Error while loading reservation details. Reservation ID: 11
+System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at HMS_DataAccess.ClsServiceBookingsData.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 139
+   at HMS_Buisness.ClsServiceBookings.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 87
+   at HMS.reservations.Controls.CtrlReservationOverview._LoadResversationDetails() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 100
+   at HMS.reservations.Controls.CtrlReservationOverview.LoadReservationDetails(Int32 reservationId, EnReservationStatus status) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 158
+2026-07-18 00:42:14.977 +08:00 [ERR] Error while loading reservation details. Reservation ID: 11
+System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at HMS_DataAccess.ClsServiceBookingsData.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 139
+   at HMS_Buisness.ClsServiceBookings.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 87
+   at HMS.reservations.Controls.CtrlReservationOverview._LoadResversationDetails() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 100
+   at HMS.reservations.Controls.CtrlReservationOverview.LoadReservationDetails(Int32 reservationId, EnReservationStatus status) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 158
+2026-07-18 00:44:54.737 +08:00 [INF] Reservation saved successfully. Reservation ID: 11
+2026-07-18 00:44:59.138 +08:00 [ERR] Error while loading reservation details. Reservation ID: 11
+System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at HMS_DataAccess.ClsServiceBookingsData.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 139
+   at HMS_Buisness.ClsServiceBookings.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 87
+   at HMS.reservations.Controls.CtrlReservationOverview._LoadResversationDetails() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 100
+   at HMS.reservations.Controls.CtrlReservationOverview.LoadReservationDetails(Int32 reservationId, EnReservationStatus status) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 158
+2026-07-18 00:45:44.401 +08:00 [INF] User logged in successfully. Username: Zaid
+2026-07-18 00:46:16.089 +08:00 [ERR] Error while saving customer. Customer ID: 0
+System.Data.SqlClient.SqlException (0x80131904): The variable name '@status' has already been declared. Variable names must be unique within a query batch or stored procedure.
+Must declare the scalar variable "@person_id".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsCustomersData.AddNewCustomer(Int32 personId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsCustomersData.cs:line 98
+   at HMS_Buisness.ClsCustomers._AddNewCustomer() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsCustomers.cs:line 49
+   at HMS_Buisness.ClsCustomers.Save() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsCustomers.cs:line 69
+   at HMS.Customers.FrmAddUpdateCustomers.btnSave_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\Customers\FrmAddUpdateCustomers.cs:line 240
+ClientConnectionId:433641b1-e74c-4804-9c0b-08ce8810e289
+Error Number:134,State:1,Class:15
+2026-07-18 00:50:16.635 +08:00 [WRN] Failed to save customer. Customer ID: -1
+2026-07-18 00:50:52.565 +08:00 [ERR] Error while saving customer. Customer ID: 0
+System.Data.SqlClient.SqlException (0x80131904): The variable name '@status' has already been declared. Variable names must be unique within a query batch or stored procedure.
+Must declare the scalar variable "@person_id".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsCustomersData.AddNewCustomer(Int32 personId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsCustomersData.cs:line 98
+   at HMS_Buisness.ClsCustomers._AddNewCustomer() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsCustomers.cs:line 49
+   at HMS_Buisness.ClsCustomers.Save() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsCustomers.cs:line 69
+   at HMS.Customers.FrmAddUpdateCustomers.btnSave_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\Customers\FrmAddUpdateCustomers.cs:line 240
+ClientConnectionId:433641b1-e74c-4804-9c0b-08ce8810e289
+Error Number:134,State:1,Class:15
+2026-07-18 00:51:44.545 +08:00 [INF] User logged in successfully. Username: Zaid
+2026-07-18 00:52:27.576 +08:00 [INF] Customer saved successfully. Customer ID: 5
+2026-07-18 00:52:43.821 +08:00 [INF] Customer saved successfully. Customer ID: 5
+2026-07-18 00:53:25.127 +08:00 [ERR] Error while loading reservation details. Reservation ID: 11
+System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   at System.Convert.ToDecimal(Object value)
+   at HMS_DataAccess.ClsServiceBookingsData.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 139
+   at HMS_Buisness.ClsServiceBookings.GetServicesChargeByReservationId(Int32 reservationId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 87
+   at HMS.reservations.Controls.CtrlReservationOverview._LoadResversationDetails() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 100
+   at HMS.reservations.Controls.CtrlReservationOverview.LoadReservationDetails(Int32 reservationId, EnReservationStatus status) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlReservationOverview.cs:line 158
+2026-07-18 01:06:24.570 +08:00 [INF] User logged in successfully. Username: Zaid
+2026-07-18 01:06:35.507 +08:00 [ERR] Error while confirming check-in. Reservation ID: 11
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the nvarchar value 'a798b926-2a60-43e3-a7b2-5927316c1e84' to data type tinyint.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsPaymentsData.AddNewPayment(Int32 billId, DateTime paymentDate, Decimal amount, String transactionReference, Byte paymentTypeId, Int32 relatedPaymentId, Byte paymentMethodId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsPaymentsData.cs:line 32
+   at HMS_Buisness.ClsPayments._AddNewPaymentRecord() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsPayments.cs:line 70
+   at HMS_Buisness.ClsPayments.Save() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsPayments.cs:line 79
+   at HMS.reservations.Controls.CtrlCheckInConfirm.btnConfirmCheckIn_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlCheckInConfirm.cs:line 88
+ClientConnectionId:37b204b2-eeeb-453d-9bd4-e83d577aa890
+Error Number:245,State:1,Class:16
+2026-07-18 01:07:06.633 +08:00 [ERR] Error while confirming check-in. Reservation ID: 11
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the nvarchar value '10d019e5-6efb-4365-8c82-49e700a36082' to data type tinyint.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsPaymentsData.AddNewPayment(Int32 billId, DateTime paymentDate, Decimal amount, String transactionReference, Byte paymentTypeId, Int32 relatedPaymentId, Byte paymentMethodId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsPaymentsData.cs:line 32
+   at HMS_Buisness.ClsPayments._AddNewPaymentRecord() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsPayments.cs:line 70
+   at HMS_Buisness.ClsPayments.Save() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsPayments.cs:line 79
+   at HMS.reservations.Controls.CtrlCheckInConfirm.btnConfirmCheckIn_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlCheckInConfirm.cs:line 88
+ClientConnectionId:37b204b2-eeeb-453d-9bd4-e83d577aa890
+Error Number:245,State:1,Class:16
+2026-07-18 01:09:53.030 +08:00 [INF] User logged in successfully. Username: Zaid
+2026-07-18 01:10:16.396 +08:00 [INF] Reservation cancelled successfully.
+2026-07-18 01:10:32.939 +08:00 [INF] Reservation saved successfully. Reservation ID: 12
+2026-07-18 01:10:40.373 +08:00 [INF] Check-in completed successfully. Reservation ID: 12, Bill ID: 10
+2026-07-18 01:11:14.551 +08:00 [INF] Services added successfully. Count: 3, Bill ID: 10
+2026-07-18 01:11:32.916 +08:00 [INF] Deposit record created successfully. Bill ID: 10
+2026-07-18 01:11:32.919 +08:00 [INF] Room charge record created successfully. Bill ID: 10
+2026-07-18 01:11:32.920 +08:00 [INF] Service charge record created successfully. Bill ID: 10
+2026-07-18 01:11:32.930 +08:00 [INF] Checkout completed successfully. Reservation ID: 12, Bill ID: 10
+2026-07-18 01:11:58.426 +08:00 [INF] Reservation saved successfully. Reservation ID: 13
+2026-07-18 01:12:05.297 +08:00 [INF] Check-in completed successfully. Reservation ID: 13, Bill ID: 11
+2026-07-18 01:12:11.403 +08:00 [INF] Deposit record created successfully. Bill ID: 11
+2026-07-18 01:12:11.408 +08:00 [INF] Room charge record created successfully. Bill ID: 11
+2026-07-18 01:12:11.411 +08:00 [INF] Checkout completed successfully. Reservation ID: 13, Bill ID: 11
+2026-07-18 01:12:47.647 +08:00 [INF] Customer marked as inactive. Customer ID: 5
+2026-07-18 01:13:20.885 +08:00 [INF] Reservation saved successfully. Reservation ID: 14
+2026-07-18 01:13:27.552 +08:00 [INF] Check-in completed successfully. Reservation ID: 14, Bill ID: 12
+2026-07-18 01:13:35.383 +08:00 [INF] Services added successfully. Count: 3, Bill ID: 12
+2026-07-18 01:15:44.151 +08:00 [INF] User logged in successfully. Username: Zaid
+2026-07-18 01:16:05.085 +08:00 [ERR] Error while opening customer profile from service bookings.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HMS.ServicesBooking.FrmServicesBookingManagment.viewProfileToolStripMenuItem_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\ServicesBooking\FrmServicesBookingManagment.cs:line 188
+2026-07-18 01:18:36.599 +08:00 [INF] User logged in successfully. Username: Zaid
+2026-07-18 01:18:47.937 +08:00 [INF] Service booking 14 updated successfully.
+2026-07-18 01:18:55.140 +08:00 [INF] Service booking 14 updated successfully.
+2026-07-18 01:20:02.520 +08:00 [INF] Services added successfully. Count: 3, Bill ID: 12
+2026-07-18 01:20:11.812 +08:00 [ERR] Error while saving selected services. Bill ID: 3
+System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__service_b__reser__5629CD9C". The conflict occurred in database "HotelManagementDB", table "dbo.reservations", column 'reservation_id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsServiceBookingsData.AddServiceBooking(Int32 reservationId, Byte serviceId, Int32 billId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 69
+   at HMS_Buisness.ClsServiceBookings.AddService() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 69
+   at HMS.reservations.Controls.CtrlAddServiceToBill.btnAddSelected_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlAddServiceToBill.cs:line 276
+ClientConnectionId:c4d4ca9e-701e-4bbb-81aa-4b656eb94de7
+Error Number:547,State:0,Class:16
+2026-07-18 01:20:14.429 +08:00 [ERR] Error while saving selected services. Bill ID: 3
+System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__service_b__reser__5629CD9C". The conflict occurred in database "HotelManagementDB", table "dbo.reservations", column 'reservation_id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsServiceBookingsData.AddServiceBooking(Int32 reservationId, Byte serviceId, Int32 billId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 69
+   at HMS_Buisness.ClsServiceBookings.AddService() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 69
+   at HMS.reservations.Controls.CtrlAddServiceToBill.btnAddSelected_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlAddServiceToBill.cs:line 276
+ClientConnectionId:c4d4ca9e-701e-4bbb-81aa-4b656eb94de7
+Error Number:547,State:0,Class:16
+2026-07-18 01:20:16.078 +08:00 [ERR] Error while saving selected services. Bill ID: 3
+System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__service_b__reser__5629CD9C". The conflict occurred in database "HotelManagementDB", table "dbo.reservations", column 'reservation_id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsServiceBookingsData.AddServiceBooking(Int32 reservationId, Byte serviceId, Int32 billId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 69
+   at HMS_Buisness.ClsServiceBookings.AddService() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 69
+   at HMS.reservations.Controls.CtrlAddServiceToBill.btnAddSelected_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlAddServiceToBill.cs:line 276
+ClientConnectionId:c4d4ca9e-701e-4bbb-81aa-4b656eb94de7
+Error Number:547,State:0,Class:16
+2026-07-18 01:20:17.174 +08:00 [ERR] Error while saving selected services. Bill ID: 3
+System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__service_b__reser__5629CD9C". The conflict occurred in database "HotelManagementDB", table "dbo.reservations", column 'reservation_id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsServiceBookingsData.AddServiceBooking(Int32 reservationId, Byte serviceId, Int32 billId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 69
+   at HMS_Buisness.ClsServiceBookings.AddService() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 69
+   at HMS.reservations.Controls.CtrlAddServiceToBill.btnAddSelected_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlAddServiceToBill.cs:line 276
+ClientConnectionId:c4d4ca9e-701e-4bbb-81aa-4b656eb94de7
+Error Number:547,State:0,Class:16
+2026-07-18 01:20:18.642 +08:00 [ERR] Error while saving selected services. Bill ID: 3
+System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__service_b__reser__5629CD9C". The conflict occurred in database "HotelManagementDB", table "dbo.reservations", column 'reservation_id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at HMS_DataAccess.clsDataAccessHelper.ExecuteScalar(String query, SqlParameter[] parameters) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\clsDataAccessHelper.cs:line 27
+   at HMS_DataAccess.ClsServiceBookingsData.AddServiceBooking(Int32 reservationId, Byte serviceId, Int32 billId) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_DataAccess\ClsServiceBookingsData.cs:line 69
+   at HMS_Buisness.ClsServiceBookings.AddService() in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\ClsServiceBookings.cs:line 69
+   at HMS.reservations.Controls.CtrlAddServiceToBill.btnAddSelected_Click(Object sender, EventArgs e) in C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS\reservations\Controls\CtrlAddServiceToBill.cs:line 276
+ClientConnectionId:c4d4ca9e-701e-4bbb-81aa-4b656eb94de7
+Error Number:547,State:0,Class:16
+2026-07-18 01:20:34.361 +08:00 [INF] Deposit record created successfully. Bill ID: 12
+2026-07-18 01:20:34.364 +08:00 [INF] Room charge record created successfully. Bill ID: 12
+2026-07-18 01:20:34.367 +08:00 [INF] Service charge record created successfully. Bill ID: 12
+2026-07-18 01:20:34.375 +08:00 [INF] Checkout completed successfully. Reservation ID: 14, Bill ID: 12
+2026-07-18 01:20:50.897 +08:00 [INF] Service price updated successfully. Service ID: 5, New Price: 12

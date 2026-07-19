@@ -1,0 +1,6 @@
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\Utilities\bin\Debug\Utilities.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\Utilities\obj\Debug\Utilities.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\Utilities\obj\Debug\Utilities.pdb

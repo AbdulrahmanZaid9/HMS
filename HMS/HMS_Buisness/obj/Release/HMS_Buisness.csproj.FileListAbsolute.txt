@@ -1,0 +1,11 @@
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\bin\Release\HMS_Buisness.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\bin\Release\HMS_Buisness.pdb
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\bin\Release\HMS_DataAccess.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\bin\Release\Utilities.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\bin\Release\HMS_DataAccess.pdb
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\bin\Release\Utilities.pdb
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\obj\Release\HMS_Buisness.csproj.AssemblyReference.cache
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\obj\Release\HMS_Buisness.csproj.CoreCompileInputs.cache
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\obj\Release\HMS_Buis.117BCC44.Up2Date
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\obj\Release\HMS_Buisness.dll
+C:\Users\Zaid\Downloads\Projects\MyProjects\MyCV\Projects_Course_5\Projects_C_5\HMS\HMS_Buisness\obj\Release\HMS_Buisness.pdb
