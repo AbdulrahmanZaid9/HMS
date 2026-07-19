@@ -5,6 +5,7 @@ A desktop Hotel Management System built with C# and Windows Forms, following a 3
 ## Table of Contents
 
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Project Structure](#project-structure)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
@@ -44,6 +45,64 @@ Rolling daily log files powered by Serilog for diagnostics and auditing.
 
 **Installer**
 A Visual Studio Installer project (Setup1_HMS) for packaging the application, along with a ready-to-restore SQL Server database backup.
+
+## Screenshots
+
+### Login and Dashboard
+
+| Login | Dashboard |
+|---|---|
+| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) |
+
+### Users and Profile
+
+| Users Management | View Profile |
+|---|---|
+| ![Users Management](screenshots/users-management.png) | ![View Profile](screenshots/view-profile.png) |
+
+### Customer Management
+
+| Customer List | Customer Actions |
+|---|---|
+| ![Customer List](screenshots/customer-list.png) | ![Customer Actions](screenshots/customer-actions.png) |
+
+| Add Customer | Reservation History |
+|---|---|
+| ![Add Customer](screenshots/add-customer.png) | ![Reservation History](screenshots/reservation-history.png) |
+
+### Room Management
+
+| Room Details |  |
+|---|---|
+| ![Room Details](screenshots/room-details.png) |  |
+
+### Reservations
+
+| Reservations List and Actions | Current Reservation |
+|---|---|
+| ![Reservations List](screenshots/reservations-list.png) | ![Current Reservation](screenshots/current-reservation.png) |
+
+### Services
+
+| Services Management | Service Booking List |
+|---|---|
+| ![Services Management](screenshots/services-management.png) | ![Service Booking List](screenshots/service-booking-list.png) |
+
+| Service Booking Actions | Add Services to Bill |
+|---|---|
+| ![Service Booking Actions](screenshots/service-booking-actions.png) | ![Add Services to Bill](screenshots/add-services-to-bill.png) |
+
+### Billing
+
+| Bill Summary |  |
+|---|---|
+| ![Bill Summary](screenshots/bill-summary.png) |  |
+
+### Reports
+
+| Revenue Reports |  |
+|---|---|
+| ![Revenue Reports](screenshots/revenue-reports.png) |  |
 
 ## Project Structure
 
